@@ -48,5 +48,3 @@ response = natural_language_understanding.analyze(
     features=Features(keywords=KeywordsOptions(sentiment=True,emotion=True,limit=1))).get_result()
 
 print(json.dumps(response, indent=2))
-
-[create_trait_plot(personality_trait['sentiment'], personality_trait['emotion']) for personality_trait in profile['personality']]
